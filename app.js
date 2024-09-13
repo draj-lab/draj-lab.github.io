@@ -6,8 +6,8 @@ for(const image of images){
     fetch("https://dog.ceo/api/breeds/image/random")
     .then(response => response.json())
     .then(data => {
-        image.width = 100;
-        image.height = 100;
+        image.width = 200;
+        image.height = 200;
         image.src = data.message
         })
     }

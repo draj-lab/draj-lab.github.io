@@ -16,8 +16,8 @@ ul {
 }
 
 body > header { 
-    background-color: orange;
-    color: #D0FEFE;
+    background-color: black;
+    color: darkblue;
     display: flex;
     height: 12vh;
     align-items: center;
@@ -51,34 +51,49 @@ body > main article {
     margin: auto;
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
+#background {
+    background-color: rgb(2, 2, 51)  ;
 }
 
-#main-content > div {
-    width: 70%;
-}
+#photos {
+    display: grid;
+    grid-template-areas: 
+    "pic1 pic2 pic3"
+    "pic4 pic5 pic6"
+    "pic7 pic8 pic9" ;
 
-#main-content aside {
-    width: 20%;
-}
-
-form {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-body > footer {
-    background-color: orange;
-    display: flex;
 }
 
 img {
-    border-radius: 30%;
+    border-radius: 5%;
+}
+
+#pic1 { 
+    grid-area: pic1;
+}
+#pic2 { 
+    grid-area: pic2;
+}
+#pic3 { 
+    grid-area: pic3;
+}
+#pic4 { 
+    grid-area: pic4;
+}
+#pic5 { 
+    grid-area: pic5;
+}
+#pic6 { 
+    grid-area: pic6;
+}
+#pic7 { 
+    grid-area: pic7;
+}
+#pic8 { 
+    grid-area: pic8;
+}
+#pic9 { 
+    grid-area: pic9;
 }
 
 #footer-ul {
@@ -94,4 +109,8 @@ img {
 #footer-ul > div > li > a {
     text-decoration: none;
     color: white;
+}
+
+#send {
+    color: aliceblue;
 }
